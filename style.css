@@ -1,19 +1,22 @@
 /* Banner */
-.banner img{
+.banner img {
     width: 80%;
     height: 60%;
     padding: 0px 0px 0px 200px;
 
 }
-h1{
+
+h1 {
     font-size: 35px;
     text-transform: capitalize;
     text-align: center;
     color: #0056b3;
 }
-.links{
+
+.links {
     text-align: center;
 }
+
 /* a-tag links */
 .button {
     display: inline-block;
@@ -38,77 +41,79 @@ h1{
     box-shadow: none;
     transform: translateY(2px);
 }
+
 /* CONTENT-SECTION */
-.content h3{
+.content h3 {
     text-transform: capitalize;
     font-size: 28px;
     color: #0056b3;
     padding: 0px 0px 0px 50px;
 }
-.content p{
+
+.content p {
     font-size: 22px;
     padding: 0px 0px 0px 50px;
 
 }
+
 /* FOOTER-SECTION */
 footer {
     background-color: #333;
     color: #fff;
     padding: 40px 0;
     text-align: center;
-  }
-  
-  .footer-container {
+}
+
+.footer-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
-  }
-  
-  .footer-section {
+}
+
+.footer-section {
     flex: 1;
     padding: 20px;
     min-width: 250px;
-  }
-  
-  .footer-section h3 {
+}
+
+.footer-section h3 {
     color: #f0f0f0;
     margin-bottom: 20px;
-  }
-  
-  .footer-section p,
-  .footer-section ul,
-  .footer-section a {
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
     color: #ccc;
     text-decoration: none;
-  }
-  
-  .footer-section ul {
+}
+
+.footer-section ul {
     list-style: none;
     padding: 0;
-  }
-  
-  .footer-section ul li {
+}
+
+.footer-section ul li {
     margin-bottom: 10px;
-  }
-  
-  .footer-section a:hover {
+}
+
+.footer-section a:hover {
     color: #fff;
-  }
-  
-  .footer-bottom {
+}
+
+.footer-bottom {
     margin-top: 20px;
     font-size: 0.8em;
     color: #888;
-  }
-  
-  .footer-bottom a {
+}
+
+.footer-bottom a {
     color: #fff;
     text-decoration: none;
-  }
-  
-  .footer-bottom a:hover {
+}
+
+.footer-bottom a:hover {
     text-decoration: underline;
-  }
-  
+}
