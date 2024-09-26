@@ -233,6 +233,10 @@ section {
     color: #e570ed;
     background: black;
 }
+/* TABLE-SECTI0N */
+       table{
+        border-collapse: collapse;
+       }                                                 
 
 /* FOOTER-SECTION */
 footer {
