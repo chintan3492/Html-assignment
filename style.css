@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100%;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    line-height: 1.25;
+    position: relative;
+    padding-top: 70px;
+
+}
 
 .container {
     width: 100%;
@@ -11,6 +21,7 @@
     margin: 0 auto;
     max-width: 1280px;
 }
+
 
 .my-100 {
     margin: 100px auto;
@@ -30,10 +41,14 @@
 
 /* HEADER */
 header {
-    background: black;
+    background: green;
     color: white;
     padding: 15px 0;
     margin-bottom: 25px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 
 header .logo {
@@ -59,19 +74,24 @@ header nav {
     align-items: center;
 }
 
-.nav-bar ul li {}
+.nav-bar ul li {
+    margin: 12px 18px;
+}
 
 .nav-bar ul li a {
     color: white;
     display: block;
     text-decoration: none;
-    padding: 12px 18px;
-    font-size: 16px;
+    /* padding: 12px 18px; */
+    font-size: 22px;
     text-transform: capitalize;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 3px;
 }
 
 .nav-bar ul li a:hover {
-    color: #008cd7;
+    color: black;
+    border-bottom: 1px solid;
 }
 
 /* Banner */
@@ -233,10 +253,11 @@ section {
     color: #e570ed;
     background: black;
 }
+
 /* TABLE-SECTI0N */
-       table{
-        border-collapse: collapse;
-       }                                                 
+table {
+    border-collapse: collapse;
+}
 
 /* FOOTER-SECTION */
 footer {
