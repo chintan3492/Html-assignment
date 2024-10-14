@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./contact.css">
     <title>Contact</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -22,63 +25,187 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <div class="main">
-            <!--  BANNER-SECTION -->
-            <div class="banner">
-                <img src="./img/Vivo-Apex-Banner.jpg" alt="vivo-banner 1">
-            </div>
-            <h1>vivo is coming with new launches</h1>
-            <p>vivo has nice camera</p>
-            <div class="links">
-                <a href="https://www.vivo.com/in/products/xfold3pro" class="button" target="_blank">vivo x fold-3</a>
-                <a href="https://www.vivo.com/in/products/x100" class="button" target="_blank">vivo x-100</a>
-                <a href="https://www.vivo.com/in/products/v40-pro" class="button" target="_blank">vivo x-40 pro</a>
-            </div>
+    <main>
+        <div class="banner">
+            <img src="./img/Vivo-Apex-Banner.jpg" alt="vivo-banner 1">
         </div>
-    
+        <div class="container my-100">
+            <h1>vivo is coming with new launches</h1>
+            <center>
+                <p class="my-20 ">vivo has nice camera</p>
+            </center>
+            <!-- links -->
+            <div class="links">
+                <a href="https://www.vivo.com/in/products/xfold3pro" class="button" target="_blank">vivo x
+                    fold-3</a>
+                <a href="https://www.vivo.com/in/products/x100" class="button" target="_blank">vivo x-100</a>
+                <a href="https://www.vivo.com/in/products/v40-pro" class="button" target="_blank">vivo x-40
+                    pro</a>
+            </div>
+
+
             <!-- CONTENT-SECTION -->
-             <div class="container">
             <div class="content">
                 <h3>vivo x fold-3</h3>
                 <p>Super slim, super large, and super fast charging.
-                    The combination of hardware and software extends battery life, alongside software optimization for
+                    The combination of hardware and software extends battery life, alongside software
+                    optimization for
                     ultra-low
                     power consumption and ultra-long standby.</p>
-    
+
                 <h3>vivo x-100</h3>
-                <p>Experience the pinnacle of innovation with our reimagined and enhanced customized vivo V2 Chip. With this
-                    chip there have been multi-dimensional improvements in the memory unit, AI computing unit, and image
+                <p>Experience the pinnacle of innovation with our reimagined and enhanced customized vivo V2
+                    Chip. With this
+                    chip there have been multi-dimensional improvements in the memory unit, AI computing unit,
+                    and image
                     processing unit. Dual-chip collaboration propels imaging into the next generation.</p>
             </div>
-        </div>
-            <!-- FOOTER-SECTION -->
-            <footer>
-                <div class="footer-container">
-                    <div class="footer-section about">
-                        <h3>About Us</h3>
-                        <p>We provide high-quality camera centric mobile achieve your goals.</p>
+            <!-- SECTION-CSS-COMBINATORS -->
+            <section class="combinators">
+                <!-- DEMO-1 -->
+                <div class="demo-1">
+                    <div>
+                        <h2>descendent selector</h2>
+                        <p>The descendant selector matches all elements that are descendants of a specified element.</p>
+                        <section>
+                            <p>in this descendent-selector by css it will take particular inside div's content</p>
+                        </section>
                     </div>
-                    <div class="footer-section links">
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
+                    <p>this paragraph is outside the "div" so it will not take the css</p>
+                    <p>the css is give as div <b>space</b> tag</p>
+                </div>
+                <hr>
+                <!-- DEMO-2 -->
+                <div class="demo-2">
+                    <h2>child selecor</h2>
+                    <p>The child selector (>) selects all elements that are the children of a specified element</p>
+                    <div>
+                        <p>this para is in div</p>
+                        <p>this para is in div</p>
+                        <section>
+                            <p>this para is in div</p>
+                        </section>
+                        <p>this para is in div</p>
                     </div>
-                    <div class="footer-section social">
-                        <h3>Follow Us</h3>
-                        <a href="#">Facebook</a>
-                        <a href="#">Twitter</a>
-                        <a href="#">Instagram</a>
+                    <p>this para is outside of div</p>
+                    <p>this para is outside of div</p>
+                </div>
+                <hr>
+                <!-- DEMO-3 -->
+                <div class="demo-3">
+                    <h2>adjecent sibling selector</h2>
+                    <p>The + selector is used to select an element that is directly after another specific element.</p>
+                    <p>The following example selects the first p element that are placed immediately after div elements:
+                    </p>
+
+                    <div>
+                        <p>this para is in div </p>
+                        <p>this para is in div </p>
+                    </div>
+                    <p>this para is out of the div</p>
+                    <p>this para is out of the div</p>
+                    <p>this para is out of the div</p>
+                    <div>
+                        <p>this para is in div </p>
+                        <p>this para is in div </p>
+                    </div>
+                    <p>this para is out of the div</p>
+                    <p>this para is out of the div</p>
+                </div>
+                <hr>
+                <!-- DEMO-4 -->
+                <div class="demo-4">
+                    <h2>general sibiling selector</h2>
+                    <p>The general sibling selector (~) selects all elements that are next siblings of a specified
+                        element.</p>
+                    <div>
+                        <p>this seletor will give css to a tag which will be just after the div</p>
+                        <p>like if we will take p tag in css then it will take all the p tag after the div </p>
+                    </div>
+                    <p>this para is after the div</p>
+                    <code> some code</code>
+                    <p>this para is also afte the div</p>
+                </div>
+            </section>
+            <!-- pseudo-class -->
+            <section class="pseudo-class">
+                <div class="anchor">
+                    <h2>styling the link</h2>
+                    <p>
+                        <b>
+                            <a href="https://www.vivo.com/in/products/x100?fromSuggestion=X100" target="_blank">vivo
+                                x100</a>
+                        </b>
+                    </p>
+                </div>
+                <hr>
+                <div class="hover-change">
+                    <h2>
+                        Pseudo-classes and HTML Classes
+                    </h2>
+                    <p>when we will hover the link it will change the color and font-size</p>
+                    <p><a class="highlight" href="https://www.vivo.com/in/products/x100?fromSuggestion=X100"
+                            target="_blank">vivo x100</a>
+                    </p>
+                    <p><a href="https://www.vivo.com/in/products/x100?fromSuggestion=X100">tutorial of pseudo-class</a>
+                    </p>
+                </div>
+                <hr>
+                <div class="hover-on-div">
+                    <p>Mouse over the div element below to change its background color:</p>
+                    <div>
+                        mouse over me
                     </div>
                 </div>
-                <div class="footer-bottom">
-                    &copy; 2024 Your Website | Designed by Your Company
+                <hr>
+                <div class="hover-tooltip">
+                    <div>
+                        Hover over this div element to show the p element
+                        <p>i am here</p>
+                    </div>
                 </div>
-            </footer>
+                <hr>
+                <div class="first-child">
+                    The :first-child pseudo-class matches a specified element that is the first child of another
+                    element.
+                    <p>i am 1st child</p>
+                    <p>i am 2nd child</p>
+                    <div>
+                        <p>i am 1st child in div</p>
+                        <p>i am 2nd child in div</p>
+                    </div>
+                </div>
+            </section>
+    </main>
+
+    <!-- FOOTER-SECTION -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>We provide high-quality camera centric mobile achieve your goals.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
         </div>
+        <div class="footer-bottom">
+            &copy; 2024 Your Website | Designed by Your Company
+        </div>
+    </footer>
+    </div>
 </body>
+
 </html>
