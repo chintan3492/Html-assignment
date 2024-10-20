@@ -177,5 +177,38 @@
 .first-child p:first-child {
     color: #3e423e;
     background-color: #35b1b1;
-   
+
+}
+/* SHADOW SECTION */
+.shadow-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.shadow-section>div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.shadow-section .text-shadow {
+    display: flex;
+    gap: 20px;
+}
+
+.shadow-section .box-shadow>div {
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    padding: 20px;
+    height: 250px;
+}
+
+.shadow-section .box-shadow {
+
+    flex-direction: row;
+
+
 }
