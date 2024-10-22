@@ -211,10 +211,10 @@ h1 {
     /* padding: 0px 0px 0px 50px; */
 
 }
+
 /* nth-child */
 .nth-child> div{
 border: 1px solid black;
 height:30px;
 width: 30px;
-
 }
