@@ -213,8 +213,137 @@ h1 {
 }
 
 /* nth-child */
-.nth-child> div{
-border: 1px solid black;
-height:30px;
-width: 30px;
+/* CHILD-ONE */
+.nth-child>p {
+    font-size: 30px;
+    color: blue;
+    text-transform: capitalize;
+    margin-top: 18px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.box {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    font-size: 23px;
+}
+
+.child-one>div {
+    border: 1px solid black;
+    height: 35px;
+    width: 35px;
+}
+
+/* .child-one {
+    gap: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    font-size: 23px;
+} */
+
+.child-one>div:nth-child(5) {
+    background-color: #008000;
+    color: #fff;
+}
+
+/* CHILD-TWO */
+.child-two>div {
+    border: 1px solid black;
+    height: 35px;
+    width: 35px;
+}
+
+/*
+.child-two {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    font-size: 23px;
+} */
+
+.child-two>div:nth-child(n+6) {
+    background-color: #008000;
+    color: #fff;
+}
+
+/* CHILD-THREE*/
+.child-three>div {
+    border: 1px solid black;
+    height: 35px;
+    width: 35px;
+}
+
+.child-three>div:nth-child(-n+5) {
+    background-color: #008000;
+    color: #fff;
+}
+
+/* CHILD-FOUR*/
+.child-four>div {
+    border: 1px solid #000;
+    height: 35px;
+    width: 35px;
+}
+
+.child-four>div:nth-child(4n-7) {
+    background-color: #008000;
+    color: #fff;
+}
+
+
+/* CHILD-FIVE */
+.child-five>div {
+    border: 1px solid #000;
+    height: 35px;
+    width: 35px;
+}
+
+.child-five>div:nth-child(odd) {
+    background-color: #008000;
+    color: #fff;
+}
+
+/* CHILD-SIX */
+.child-six>div {
+    border: 1px solid#000;
+    height: 35px;
+    width: 35px;
+}
+
+.child-six>div:nth-child(even) {
+    background-color: #008000;
+    color: #fff;
+}
+
+/* LAST-CHILD */
+.child-last-element>div {
+    border: 1px solid#000;
+    height: 35px;
+    width: 35px;
+}
+
+.child-last-element>div:last-child {
+    background-color: #008000;
+    color: #fff;
+
+}
+
+/* SECOND TO THE LAST ELEMENT */
+.child-sec-element>div {
+    border: 1px solid#000;
+    height: 35px;
+    width: 35px;
+}
+
+.child-sec-element>div:nth-last-child(2) {
+    background-color: #008000;
+    color: #fff;
 }

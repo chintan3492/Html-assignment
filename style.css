@@ -22,6 +22,14 @@ body {
     max-width: 1280px;
 }
 
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
 
 .my-100 {
     margin: 100px auto;
@@ -99,6 +107,48 @@ header nav {
 .nav-bar ul li a:hover {
     color: black;
     border-bottom: 1px solid;
+}
+
+.sub-menu {}
+
+.drop-down {
+    left: 0;
+    top: 58px;
+    visibility: hidden;
+    transition: all 0.4s;
+
+}
+
+.sub-menu:hover>.drop-down {
+    visibility: visible;
+}
+
+.drop-down ul {
+    flex-direction: column;
+    min-width: 180px;
+
+
+}
+
+.drop-down ul li {
+    margin: 0;
+    display: block;
+    width: 100%;
+}
+
+.drop-down ul li a {
+    display: block;
+    background: #ddd;
+    padding: 10px 15px;
+    font-size: 17px;
+    color: #111;
+    border: 0 !important;
+    transition: all 0.5s;
+}
+
+.drop-down ul li a:hover {
+    background: #111;
+    color: white;
 }
 
 /* drop-down btn */
